@@ -1,0 +1,24 @@
+footer#main-footer {
+  header {
+    margin-bottom: $grid-gutter-width;
+    font-weight: bold;
+    // font-family: 'brandon-grotesque';
+    // text-transform: uppercase;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  a {
+    color: $gray-light;
+    &:hover {
+      color: $gray;
+    }
+  }
+  .social li {
+      display: inline-block;
+      // margin: 0 10px;
+      margin-left: 10px;
+      font-size: 40px;
+  }
+}

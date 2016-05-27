@@ -1,0 +1,25 @@
+$brand-primary: #3e9d8c;
+$brand-secondary: #ffb401;
+
+$font-family-sans-serif: "proxima-nova", Helvetica, Arial, sans-serif !default;
+$font-size-root: 15px;
+
+$link-hover-decoration: none;
+
+$btn-primary-border: $brand-primary;
+$btn-default-border: #ccc;
+
+@import "../../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap";
+@import "_fonts";
+@import "_buttons";
+@import "_links";
+@import "_typography";
+
+@import "components/_trip";
+
+@import "layout/_layout";
+@import "layout/_navbar";
+@import "layout/_footer";
+@import "layout/_carousel";
+
+@import "pages/_homepage";

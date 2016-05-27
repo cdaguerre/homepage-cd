@@ -1,0 +1,14 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3 {
+  font-family: "brandon-grotesque", "proxima-nova";
+  text-transform: uppercase;
+  font-weight: 900;
+}
+@media (max-width: 768px) {
+  .col-xs-12.text-right, .col-xs-12.text-left {
+    text-align: center;
+  }
+}

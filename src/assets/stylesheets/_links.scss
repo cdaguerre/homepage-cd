@@ -1,0 +1,21 @@
+// a {
+//   display: inline-block;
+//   position: relative;
+//   padding-bottom: 3px;
+// }
+
+// a:after {
+//   content: '';
+//   display: block;
+//   margin: auto;
+//   height: 2px;
+//   width: 0px;
+//   background: $link-color;
+//   opacity: 0;
+//   transition: opacity .25s ease, width .25s ease, background-color .5s ease;
+// }
+// a:hover:after {
+//   opacity: 1;
+//   width: 100%;
+//   background: darken($link-color, 10%);
+// }

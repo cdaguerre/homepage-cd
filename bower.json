@@ -1,0 +1,7 @@
+{
+  "name": "worldia-brodi",
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap-sass": ">=3.3"
+  }
+}

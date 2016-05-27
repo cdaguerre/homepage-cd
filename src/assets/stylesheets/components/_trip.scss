@@ -1,0 +1,46 @@
+figure.trip-card {
+  overflow: hidden;
+  background: $brand-primary;
+  margin-bottom: $grid-gutter-width;
+  img {
+    max-width: 100%;
+    transition: opacity 0.35s, transform 0.35s;
+  }
+  figcaption {
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    padding: $grid-gutter-width/2;
+    h2, p {
+      //padding: 0 $grid-gutter-width/2;
+    }
+    h2 {
+      display: inline;
+      margin: 0;
+      font-size: 18px;
+    }
+    p {
+      color: $gray;
+    }
+    p.member {
+      margin: -10px;
+      text-align: right;
+      span {
+        padding-top: 20px;
+      }
+      img {
+        margin-left: 10px;
+        vertical-align: middle;
+        @extend .img-circle;
+        @extend .img-thumbnail;
+      }
+    }
+  }
+  &:hover {
+    img.thumb {
+      opacity: 0.8;
+      transition: opacity 0.35s, transform 0.35s;
+      transform: scale(1.12);
+    }
+  }
+}

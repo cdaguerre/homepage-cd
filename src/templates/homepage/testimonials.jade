@@ -1,0 +1,58 @@
+#testimonials.padding-lg-vertical
+  .container
+    h3.text-center Ils sont partis avec Worldia
+    .row
+      .col-md-8
+        #testimonial-carousel.carousel.slide(data-ride='carousel')
+          ol.carousel-indicators
+            li.active(data-target='#testimonial-carousel', data-slide-to='0')
+            li(data-target='#testimonial-carousel', data-slide-to='1')
+            li(data-target='#testimonial-carousel', data-slide-to='2')
+          .carousel-inner(role='listbox')
+            .item.active
+              blockquote
+                p Très clair et facile d'utilisation pour un voyage à la carte.
+                footer
+                  cite(title="Stéphane") Stéphane
+                  | , New York & Washington
+            .item
+              blockquote
+                p La prestation fournie était à la hauteur de nos attentes.
+                footer
+                  cite(title="Claude") Claude
+                  | , Thaïlande
+            .item
+              blockquote
+                p La prestation fournie était à la hauteur de nos attentes.
+                footer
+                  cite(title="Bernard") Bernard
+                  | , Ibiza
+              //- .quote
+              //- .quote-text
+              //-   i.fa.fa-quote-left
+              //-   | Très clair et facile d'utilisation pour un voyage à la carte.
+              //- .quote-author Stéphane, New York & Washington
+            //- .item.quote
+            //-   .quote-text
+            //-     i.fa.fa-quote-left
+            //-     | La prestation fournie était à la hauteur de nos attentes.
+            //-   .quote-author Claude, Thaïlande
+
+        //- .testimonials.row
+        //-   .quote.col-xs-12.col-md-6
+        //-     .quote-text
+        //-       i.fa.fa-quote-left
+        //-       | Très clair et facile d'utilisation pour un voyage à la carte.
+        //-     .quote-author Stéphane, New York & Washington
+        //-   .quote.col-xs-12.col-md-6
+        //-     .quote-text
+        //-       i.fa.fa-quote-left
+        //-       | La prestation fournie était à la hauteur de nos attentes.
+        //-     .quote-author Claude, Thaïlande
+      .col-md-4(style="text-align: center;")
+        strong(style="font-size: 100px;") 4.6
+        strong(style="font-size: 80px;").text-muted /5
+        br
+        span avis certifiés eKomi
+        hr
+        a(href="#") voir tous les avis

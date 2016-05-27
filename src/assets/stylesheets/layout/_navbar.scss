@@ -1,0 +1,57 @@
+#main-nav {
+  .navbar-btn {
+    // font-weight: bold;
+  }
+  .navbar-btn:not(:hover) {
+    border-color: #fff;
+    color: #fff;
+  }
+  &.fixed .navbar-btn:not(:hover) {
+    background-color: $brand-primary;
+    border-color: transparent;
+    color: #fff;
+  }
+}
+
+
+
+nav#main-nav {
+  .navbar-brand {
+    .logo {
+      font-family: 'philosopher';
+      font-size: 16px;
+    }
+    .lead {
+      font-size: $font-size-base;
+    }
+    color: #fff;
+    font-weight: bold;
+  }
+  // li a {
+  //   color: hsla(0,0%,100%,.7);
+  //   font-weight: bold;
+  // }
+  transition: background-color .77s cubic-bezier(.225,.5,.165,1), color .77s cubic-bezier(.225,.5,.165,1),text-shadow .77s cubic-bezier(.225,.5,.165,1),border .77s cubic-bezier(.225,.5,.165,1);
+ // .nav-btn {
+ //    border-radius: 14px;
+ //  //  padding: 2px 12px;
+ //    font-size: 12px;
+ //    text-transform: uppercase;
+ // }
+
+ //  &:not(.fixed) .nav-btn {
+ //    border: 2px solid hsla(0,0%,100%,.7);
+ //    background: transparent;
+ //    color: #fff;
+ //  }
+  &.fixed {
+    .navbar-brand {
+      color: $gray-dark;
+    }
+    // transition: background-color .77s cubic-bezier(.225,.5,.165,1), color .77s cubic-bezier(.225,.5,.165,1),text-shadow .77s cubic-bezier(.225,.5,.165,1),border .77s cubic-bezier(.225,.5,.165,1);
+    background: #fff;
+    // li a {
+    //   color: $gray-light;
+    // }
+  }
+}

@@ -1,0 +1,65 @@
+#hero-carousel .carousel-caption {
+  top: 100px;
+  h1 {
+    margin-bottom: 40px;
+  }
+}
+
+#how-it-works {
+  header {
+    font-weight: bold;
+    font-size: 120%;
+  }
+  .exp-item {
+    text-align: center;
+  }
+  .exp-item-icon img {
+    width: 130px;
+    margin-bottom: 20px;
+  }
+}
+
+#video {
+  background-image: url('../images/video.png');
+  background-size: cover;
+  background-position: bottom center;
+  height: 440px;
+  .color-overlay {
+    position: relative;
+    height: 100%;
+    background: rgba(39,62,84,0.62);
+    transition: all .5s ease;
+    text-align: center;
+    &:hover {
+      background: rgba(39,62,84,0);
+      transition: all .5s ease;
+    }
+    .btn {
+      position: relative;
+      top: 50%;
+    }
+  }
+}
+
+#testimonials {
+  background-color: $brand-secondary;
+  color: #fff;
+
+  .text-muted {
+    color: #fff;
+    opacity: 0.5;
+  }
+
+  #testimonial-carousel, #testimonial-carousel .item {
+    blockquote {
+      font-size: 30px;
+      text-align: center;
+      border: 0;
+      padding-top: 25px;
+      padding-bottom: 50px;
+    }
+    footer {
+      color: #f2f2f2;
+    }
+  }
+}

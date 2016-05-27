@@ -1,0 +1,42 @@
+$btn-secondary-color:  #fff;
+$btn-secondary-bg:     $brand-secondary;
+$btn-secondary-border: transparent;
+
+.btn-secondary {
+  @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
+}
+
+.btn, .btn:hover {
+  transition: all 0.3s ease 0s;
+}
+
+.btn.outline {
+  border-width: 2px;
+  &:not(:hover) {
+    background: none;
+    &.btn-primary {
+      border-color: $brand-primary;
+      color: $brand-primary;
+    }
+    &.btn-default {
+      border-color: $btn-default-border;
+      color: $btn-default-border;
+    }
+  }
+  &:hover { border-color: transparent; }
+}
+
+.btn.round {
+  border-radius: $line-height-computed;
+  &.btn-lg {
+    // line-height: ensure even-numbered height of button next to large input
+    @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $line-height-large);
+  }
+  &.btn-sm {
+    // line-height: ensure proper height of button next to small input
+    @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $line-height-small);
+  }
+  &.btn-xs {
+    @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $line-height-small);
+  }
+}

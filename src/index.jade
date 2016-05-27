@@ -1,0 +1,30 @@
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, inital-scale=1.0")
+    link(href='/assets/stylesheets/styles.css', rel='stylesheet')
+    link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+    script(src='//cdn.jsdelivr.net/tether/1.2.0/tether.min.js')
+    script(src='//code.jquery.com/jquery-2.2.0.js')
+    script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+    // script(src='/assets/scripts/all.min.js')
+  body
+    include ./templates/layout/navbar.jade
+    include ./templates/homepage/main.jade
+    include ./templates/layout/footer.jade
+  script.
+    document.write('<script src="http://'
+    + (location.host || 'localhost').split(':')[0]
+    + ':35729/livereload.js?snipver=1"></'
+    + 'script>')
+  script.
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 100) {
+            $(".navbar").addClass("fixed");
+        } else {
+            $(".navbar").removeClass("fixed");
+        }
+
+    });
